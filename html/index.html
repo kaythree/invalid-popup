@@ -1,0 +1,90 @@
+<!doctype html>
+<html ng-app="InvalidPopup">
+	<head>
+		<title> Invalid Popup </title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">	
+	    <link rel="stylesheet" href="../css/style.css" />
+
+	</head>
+	<body>
+		<div ng-controller="InvalidPopupController" class="ip-container">
+			<div class="heading">Invalid</div>
+			<div class="gtin-container">
+				<div class="info-container">
+					<span class="icon"></span>
+					<span class="devider">|</span>
+					<span class="info">GTIN's Does Not Exist</span>
+				</div>
+				<div class="item-container">
+					<div class="item">
+						<span class="number">1</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">2</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">3</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">4</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">5</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">6</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+					<div class="item">
+						<span class="number">7</span>
+						<span class="name" ng-class="{'hide':!isFixVisible}">1234567890123</span>
+						<span class="name-input" ng-class="{'hide':isFixVisible}">
+							<input type="text" name="item1" value="1234567890123">
+						</span>
+						<a class="name-close" href="#" ng-class="{'hide':isFixVisible}">X</a>
+					</div>
+				</div>
+				<div class="btn-container">
+					<a href="#" ng-click="fixGtinInfo()" class="fix-btn" ng-class="{'hide':!isFixVisible}">Fix</a>
+					<a href="#" ng-click="updateGtinInfo()" class="update-btn" ng-class="{'hide':isFixVisible}">Update</a>
+					<a href="#" class="remove-btn">Remove</a>
+					<a href="#" class="cancel-btn">Cancel</a>
+				</div>
+			</div>
+		</div>	
+		<script type="text/javascript" src="../js/libs/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/libs/angular.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>
+

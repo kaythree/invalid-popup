@@ -1,0 +1,121 @@
+body{
+	padding:0px;
+	margin: 0px;
+}
+.ip-container{
+	width: 400px;
+	height: auto;
+}
+.ip-container .heading{
+  background: #7396ff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff9793 0%, #FF0000 100%, #FF0000 100%, #FF0000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9793), color-stop(100%,#FF0000), color-stop(100%,#2989d8), color-stop(100%,#007dc6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ff9793 0%,#FF0000 100%,#FF0000 100%,#FF0000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ff9793 0%,#FF0000 100%,#FF0000 100%,#FF0000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ff9793 0%,#FF0000 100%,#FF0000 100%,#FF0000 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ff9793 0%,#FF0000 100%,#FF0000 100%,#FF0000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9793', endColorstr='#FF0000',GradientType=0 ); /* IE6-9 */
+  color: #ffffff;
+  font-family: verdana;
+  padding: 8px 5px;
+}
+.ip-container .gtin-container{
+	background-color: #ffffff;
+    border: 1px solid lightgray;
+    padding: 10px 10px 20px 25px;
+}
+
+.ip-container .info-container , .ip-container .item-container , .ip-container .btn-container{
+	width: 95%;
+}
+
+.ip-container .info-container .devider{
+	color: lightgray;
+	position: relative;
+	top: -1px;
+}
+
+.ip-container .info-container .info{
+	font-family: arial;
+    font-size: 15px;
+}
+.ip-container .item-container{
+	overflow-y:scroll;
+	 margin-top: 10px;
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: lightgray -moz-use-text-color lightgray lightgray;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    height: 130px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+.ip-container .item-container .item{
+	border-bottom: 1px solid lightgrey;
+	font-family: arial;
+    font-weight: bold;
+ }
+
+.ip-container .item-container .item .number{
+	 background-color: lightgrey;
+    color: grey;
+    display: inline-block;
+    padding: 6px 12px;
+}
+.ip-container .item-container .item .name{
+	font-size: 12px;
+}
+
+.hide{
+	display: none !important;
+}
+.ip-container .item-container .item .name-input input{
+	width: 200px;
+}
+.ip-container .item-container .item .name-close {
+    color: #ff0000;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 11px;
+    position: relative;
+    top: 7px;
+    text-decoration: none;
+}
+
+.ip-container .btn-container{
+	margin-top: 15px;
+    text-align: right;
+}
+.ip-container .btn-container a{
+	border: 1px solid grey;
+	background-color: lightgray;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 45px;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 7px;
+}
+.ip-container .btn-container .fix-btn , .ip-container .btn-container .update-btn{
+	background-color: orange;
+	border:1px solid orange;
+	color: #FFFFFF;
+}
+
+.ip-container .btn-container .remove-btn{
+	color: #FF0000;
+}
+
+.ip-container .btn-container .cancel-btn{
+	border:1px solid grey;
+	color: grey;
+}
